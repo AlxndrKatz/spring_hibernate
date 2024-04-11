@@ -19,12 +19,8 @@ public class User {
    @Column(name = "email")
    private String email;
 
-   //@OneToOne
-   //@OneToOne(cascade = CascadeType.ALL, optional = false)
-   //@PrimaryKeyJoinColumn
    @OneToOne(cascade = CascadeType.ALL)
    @JoinColumn(name = "car_id")
-   //@JoinColumn(name = "car_id", nullable = true)
    private Car car;
 
    public User() {}
