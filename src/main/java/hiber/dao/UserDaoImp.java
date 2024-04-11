@@ -26,4 +26,10 @@ public class UserDaoImp implements UserDao {
       return query.getResultList();
    }
 
+   @Override
+   public User getUserByCarData(String model, int series) {
+      //метод, который с помощью hql-запроса будет
+      //доставать юзера, владеющего машиной по ее модели и серии.
+      return null;
+   }
 }
