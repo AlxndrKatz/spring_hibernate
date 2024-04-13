@@ -37,7 +37,7 @@ public class MainApp {
          }
          System.out.println();
       }
-      userService.getUserByCarData("ST", 201);
+      System.out.println(userService.getUserByCarData("ST", 201));
 
       context.close();
    }
